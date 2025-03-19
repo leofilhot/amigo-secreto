@@ -19,11 +19,13 @@
         
         <section class="input-section">
             <h2 class="section-title">Digite o nome dos seus amigos</h2>
+            <p class="input-hint">💡 Você pode adicionar vários nomes de uma vez, separados por "/".</p>
+            
             <div class="input-wrapper">
-                <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
+                <input type="text" id="amigo" class="input-name" placeholder="Ex: João/Maria/Carlos">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
             </div>
-           
+
             <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite"></ul>
 
@@ -32,6 +34,7 @@
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
+                <button class="button-clear" onclick="limparLista()">Limpar lista</button>
             </div>
         </section>
     </main>
